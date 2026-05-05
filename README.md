@@ -11,8 +11,8 @@ The frontend is React, backend is FastAPI. When you upload a file the backend pr
 Attack types and severity scores are assigned by a rule-based classifier (not Gemini) based on traffic fingerprints like connection state, protocol, and service. Gemini is only called when you explicitly ask for an explanation on a specific threat.
 
 ```
-React → FastAPI → XGBoost → Rule-based classifier
-                     ↓
+React -> FastAPI -> XGBoost -> Rule-based classifier
+                     |
               Gemini (on demand only)
 ```
 
